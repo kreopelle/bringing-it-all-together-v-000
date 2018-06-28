@@ -6,6 +6,6 @@ class Dog
     @id = attr_hash[:id]
     @name = attr_hash[:name]
     @breed = attr_hash[:breed]
-
+  end
 
 end
