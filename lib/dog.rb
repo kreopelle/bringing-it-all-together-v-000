@@ -34,7 +34,8 @@ class Dog
 
   def create(attr_hash)
     dog = Dog.new(attr_hash[:name], attr_hash[:breed])
-
+    dog.save
+    dog
   end
 
   def self.new_from_db(row)
