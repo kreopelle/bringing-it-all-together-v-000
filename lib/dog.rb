@@ -27,6 +27,8 @@ class Dog
 
   def self.new_from_db(row)
     dog = Dog.new(row[0], row[1], row[2])
+    dog.save
+    dog
   end
 
   def self.find_by_name(name)
@@ -34,6 +36,6 @@ class Dog
     DB[:conn].execute(sql, name).map do |row|
       self.new_from_db(row)
     end.first
-  end 
+  end
 
 end
