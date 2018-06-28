@@ -58,7 +58,7 @@ class Dog
     result = DB[:conn].execute(sql, name)[0]
     dog_hash = {id: result[0], name: result[1], breed: result[2]}
     dog = Dog.new(dog_hash)
-
+    dog
   end
 
   def self.find_by_id(id)
