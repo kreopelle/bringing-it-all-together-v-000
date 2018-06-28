@@ -73,6 +73,6 @@ class Dog
       dog = Dog.new(dog_hash)
       dog
     else
-      self.create(name:, breed:)
+      self.create(name: name, breed: breed)
 
 end
