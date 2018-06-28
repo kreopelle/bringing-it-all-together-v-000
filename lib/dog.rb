@@ -33,7 +33,7 @@ class Dog
   end
 
   def update
-    sql = "UPDATE dogs SET name = ? WHERE name = ?"
+    sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
   end
 
   def self.create(attr_hash)
