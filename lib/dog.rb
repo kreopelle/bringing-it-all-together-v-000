@@ -32,6 +32,10 @@ class Dog
       self
   end
 
+  def update
+
+  end 
+
   def self.create(attr_hash)
     dog = Dog.new(attr_hash)
     dog.save
