@@ -72,7 +72,7 @@ class Dog
       self.find_by_id(dog[0][0])
     else
       dog_hash = {name: name, breed: breed}
-      self.create()
+      self.create(name: name, breed: breed)
     end
     dog
   end
