@@ -74,5 +74,8 @@ class Dog
       dog
     else
       self.create(name: name, breed: breed)
+    end
+    dog
+  end 
 
 end
