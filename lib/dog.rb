@@ -60,7 +60,8 @@ class Dog
     sql = "SELECT * FROM dogs WHERE id = ?"
     dog = DB[:conn].execute(sql, id)
     dog_data = dog[0]
-    dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
+    dog_data[0]
+    dog = Dog.new()
     dog
   end
 
