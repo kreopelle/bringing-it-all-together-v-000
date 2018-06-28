@@ -74,7 +74,6 @@ class Dog
       dog_hash = {name: name, breed: breed}
       self.create(name: name, breed: breed)
     end
-    dog
   end
 
 end
