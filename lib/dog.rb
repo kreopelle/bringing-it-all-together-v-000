@@ -70,7 +70,7 @@ class Dog
     if !dog.empty?
       self.find_by_id(dog[0][0])
     else
-      self.create(name: name, breed: breed)
+      self.create()
     end
     dog
   end
