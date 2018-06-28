@@ -32,8 +32,8 @@ class Dog
       self
   end
 
-  def update
-
+  def update(name)
+    sql = "UPDATE dogs SET "
   end 
 
   def self.create(attr_hash)
