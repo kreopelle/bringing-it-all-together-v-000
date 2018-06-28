@@ -33,7 +33,7 @@ class Dog
   end
 
   def create(attr_hash)
-    
+    dog = Dog.new(attr_hash[:name], attr_hash[:breed])
 
   end
 
