@@ -32,7 +32,7 @@ class Dog
       self
   end
 
-  def update(name)
+  def update
     sql = "UPDATE dogs SET name = ? WHERE name = ?"
   end
 
