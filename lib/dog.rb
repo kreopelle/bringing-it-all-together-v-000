@@ -33,8 +33,8 @@ class Dog
   end
 
   def update(name)
-    sql = "UPDATE dogs SET "
-  end 
+    sql = "UPDATE dogs SET name = ? WHERE name = ?"
+  end
 
   def self.create(attr_hash)
     dog = Dog.new(attr_hash)
